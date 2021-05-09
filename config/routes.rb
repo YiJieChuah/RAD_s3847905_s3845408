@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
   get 'items/new'
   get 'items/create'
   get 'items/show'
