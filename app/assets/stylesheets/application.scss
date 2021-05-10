@@ -1,0 +1,22 @@
+/*
+*= require_tree .
+*= require_self
+*
+*/
+
+$body-bg: #121212;
+$body-color: #FFFFFF;
+
+$theme-colors: (
+  "primary": #c6ed86,
+  "secondary": #c3cc28,
+  "success": #015668,
+  "info": #0F81C7,
+  "warning": #0DE2EA,
+  "danger": #06648C,
+  "light": #FAFAFA,
+  "dark": #121212
+);
+
+@import "bootstrap";
+
