@@ -7,6 +7,10 @@
       <div class="card-img-overlay">
         <h5 class="card-title"><%= @rand_item.name %></h5>
         <p class="card-text"><%= @rand_item.price %></p>
+        <%= form_tag 'home#add' do%>
+           <%= hidden_field_tag 'item', @rand_item%>
+          <%= submit_tag '+'%>
+        <% end %>
       </div>
     </div>
   </div>

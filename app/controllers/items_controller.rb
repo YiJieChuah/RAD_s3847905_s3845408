@@ -1,4 +1,25 @@
 class ItemsController < ApplicationController
+  
+
+  @@items = []
+  
+  
+  def index
+    @collection = Collection.all
+    @item = Item.all
+    
+    randIdx = rand(Item.count)
+    @rand_item = Item.offset(randIdx).first
+    
+    render 'home/index'
+  end
+  
+  def add()
+    @@items.append(params[:item])
+    puts @@items[0]
+    index
+  end
+  
   def new
     @item = Item.new
   end
