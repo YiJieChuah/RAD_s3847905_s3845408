@@ -1,2 +1,14 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @item.image %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@item) %> |
+<%= link_to 'Back', items_path %>
