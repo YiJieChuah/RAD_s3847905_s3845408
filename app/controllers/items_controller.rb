@@ -16,7 +16,9 @@ class ItemsController < ApplicationController
   
   def add()
     @@items.append(params[:item])
-    puts @@items[0]
+    puts "----------------------------------"
+    puts params[:item]
+    puts "----------------------------------"
     index
   end
   
