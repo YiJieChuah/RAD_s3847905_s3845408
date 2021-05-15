@@ -7,9 +7,15 @@
       <div class="card-img-overlay">
         <h5 class="card-title"><%= @rand_item.name %></h5>
         <p class="card-text"><%= @rand_item.price %></p>
-        <%= form_tag 'home#add' do%>
-           <%= hidden_field_tag :item, @rand_item.id%>
-          <%= submit_tag '+'%>
+        <!--<%= form_tag 'home#add' do%>-->
+        <!--   <%= hidden_field_tag :item, @rand_item.id%>-->
+        <!--  <%= submit_tag '+'%>-->
+        <!--<% end %>-->
+        
+        <%= form_tag 'home#send' do%>
+           <p> Enter your email: </p> 
+           <%= text_field_tag :email %>
+          <%= submit_tag 'Subscribe'%>
         <% end %>
       </div>
     </div>
