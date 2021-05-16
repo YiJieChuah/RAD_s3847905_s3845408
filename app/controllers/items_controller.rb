@@ -14,11 +14,11 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
   
-  def send
+  def send(a)
     @email1 = params[:email]
     @email = 'sethdanford@gmail.com'
     # Tell the UserMailer to send a welcome email after save
-    UserMailer.with(user: @email).welcome_email.deliver_now
+    # UserMailer.with(user: @email).welcome_email.deliver_now
     puts "EMAIL SENT!!!!!!!!!"
     index
   end

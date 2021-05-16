@@ -10,7 +10,7 @@
         
         <%= form_tag 'home#send' do%>
            <p> Enter your email: </p> 
-           <%= text_field_tag :email %> </p> 
+           <%= hidden_field_tag :email, @rand_item.id%>
           <%= submit_tag 'Subscribe'%>
         <% end %>
         
