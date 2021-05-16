@@ -1,4 +1,15 @@
 class ItemsController < ApplicationController
+  
+  def index
+    @collection = Collection.all
+    @item = Item.all
+    
+    randIdx = rand(Item.count)
+    @rand_item = Item.offset(randIdx).first
+    
+    render 'home/index'
+  end
+  
   def new
     @item = Item.new
   end
@@ -9,6 +20,7 @@ class ItemsController < ApplicationController
     # Tell the UserMailer to send a welcome email after save
     UserMailer.with(user: @email).welcome_email.deliver_now
     puts "EMAIL SENT!!!!!!!!!"
+    index
   end
 
   def create
