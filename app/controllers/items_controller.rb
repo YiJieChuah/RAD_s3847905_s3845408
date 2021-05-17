@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
   
+  @@called = false
+  
   def index
     @collection = Collection.all
     @item = Item.all
@@ -18,8 +20,8 @@ class ItemsController < ApplicationController
     @email1 = params[:email]
     @email = 'sethdanford@gmail.com'
     # Tell the UserMailer to send a welcome email after save
-    # UserMailer.with(user: @email).welcome_email.deliver_now
-    puts "EMAIL SENT!!!!!!!!!"
+    UserMailer.with(user: @email).welcome_email.deliver_now
+    puts "EMAIL SENT????"
     index
   end
 
