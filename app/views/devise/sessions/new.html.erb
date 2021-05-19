@@ -24,6 +24,11 @@
   <div class="actions">
     <%= f.submit "Log in", class: "btn btn-primary" %>
   </div>
+  
+  <div class="actions">
+    <%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path, class: "btn btn-primary" %>
+  </div>
+  
 <% end %>
 <br>
 

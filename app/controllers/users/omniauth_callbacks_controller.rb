@@ -14,6 +14,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         end
     end
     
+    # Rails.application.config.middleware.use OmniAuth::Builder do
+    #   # provider :developer unless Rails.env.production?
+    #   provider :twitter, 'WaxfZhVsxh2iKXLkNYed87kVj', '3hgyS1PPo6UKRttt4PgVLoqcIWT29x4pY4oKq5U9XSV6l6m6g0'
+    # end
+    
     def failure
         puts "---------------------------"
         puts "TWEETING FAILED"

@@ -46,6 +46,10 @@ Rails.application.configure do
     authentication:       :login,
     enable_starttls_auto: true
   }
+  
+  # For twitter.
+  config.web_console.whitelisted_ips =   '139.218.25.254'
+  config.web_console.permissions = '139.218.25.254'
 
   config.action_mailer.perform_caching = false
 
