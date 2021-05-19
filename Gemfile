@@ -72,5 +72,10 @@ gem 'font-awesome-sass', '~> 5.15.1'
 # Connect to s3 for image storage
 gem "aws-sdk-s3", require: false
 
+#Connect to twitter
+gem 'omniauth'
+gem 'omniauth-twitter'
+
+
 
 
