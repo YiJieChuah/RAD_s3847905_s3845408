@@ -309,11 +309,16 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
   
-  # config.omniauth :twitter, 'WaxfZhVsxh2iKXLkNYed87kVj', '3hgyS1PPo6UKRttt4PgVLoqcIWT29x4pY4oKq5U9XSV6l6m6g0'
+  config.omniauth :twitter, '45W7WntXAZzDt3LdreqHkEJ9o', '3hgyS1PPo6UKRttt4PgVLoqcIWT29x4pY4oKq5U9XSV6l6m6g0'
   
-  config.omniauth :twitter, Rails.application.credentials.get(:twitter_api_public), Rails.application.credentials.get(:twitter_api_secret)
+  # config.omniauth :twitter, Rails.application.credentials.get(:twitter_api_public), Rails.application.credentials.get(:twitter_api_secret)
   
-  # twitter_api_public: WaxfZhVsxh2iKXLkNYed87kVj
-  # twitter_api_secret: 3hgyS1PPo6UKRttt4PgVLoqcIWT29x4pY4oKq5U9XSV6l6m6g0
+  # Api key: 45W7WntXAZzDt3LdreqHkEJ9o
+  # API Secret Key: 3hgyS1PPo6UKRttt4PgVLoqcIWT29x4pY4oKq5U9XSV6l6m6g0
+  
+  # Access Token: 1228890631793078273-kAUVTslk5owD0gGIaCWmUv3pyzBHep
+  # Access Token Secret: fqVFZ75bjMQXJMmgAqRryvzPP4c0xtCR3Ys3g6bZlI7m2hRyFe
+  
+  # Bearer Token: AAAAAAAAAAAAAAAAAAAAACsMPwEAAAAARoZB0PefGAiA8rXbXCRenecmkFk%3DE9fVIpLQkmglqDV7O81yF1nMumpwks0kQzuqFPskMDnTrJ9nYU
   
 end
